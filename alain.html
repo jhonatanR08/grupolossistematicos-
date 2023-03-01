@@ -1,14 +1,54 @@
 <!DOCTYPE html>
-	<head></head>
+	<head>
+		<style type="text/css">
+			@charset "utf-8";
+			.tarjeta{
+			  display:flex;
+			  flex-direction:column;
+			  justify-content:space-between;
+			  width:420px;
+			  border: 1px solid lightgray;
+			  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+			  border-radius:15px;
+			  font-family: sans-serif;
+			}
+			.titulo{
+			  font-size: 24px;
+			  padding: 10px 10px 0 10px;;
+			}
+			.cuerpo{
+			  padding: 10px;
+			}
+			.pie{
+			  background: #6699ff;
+			  border-radius:0 0 15px 15px;
+			  padding: 10px;
+			  text-align:center;
+			}
+			.pie a{
+			  text-decoration: none;
+			  color: white;
+			}
+			.pie a:after {
+			  position: absolute;
+			  top: 0;
+			  right: 0;
+			  bottom: 0;
+			  left: 0;
+			  z-index: 1;
+			  content: ""
+			}
+		</style>
+	</head>
 		<body>
-			<table>
-				<tr>
-					<td><img src="img/alain.jpg"></td>
-					<td><h1>Alain Rojas</h1></td>
-				</tr>
-				<tr>
-					<td>Naci en la ciudad de Llallagua el 18 de enero de 1986, lo que más me gusta hacer es averiguar sobre nuevas tecnologias del area de Sistemas, leer y escuchar historias de ciencia ficcion, comics y manga y compartirlo con mi familia</td>
-				</tr>
-			</table>
+			<div class="tarjeta">
+				<div class="titulo">Alain Rojas Huanca</div>
+					<div class="cuerpo">
+						<img src="img/alain.jpg" alt="muestra">
+					   Naci en la ciudad de Llallagua el 18 de enero de 1986, lo que más me gusta hacer es averiguar sobre nuevas tecnologias del area de Sistemas, leer y escuchar historias de ciencia ficcion, compartirlocs y manga y compartirlo con mi familia
+					</div>
+				
+			</div>
+
 		</body>
 </html>
